@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <p>Stay organized, stay creative.</p>
+        </header>
+        
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <button id="add-btn" aria-label="Add task">
+                <span class="material-icons-round">add</span>
+            </button>
+        </div>
+
+        <ul id="todo-list">
+            <!-- List items will be added here dynamically -->
+        </ul>
+        
+        <div class="empty-state" id="empty-state">
+            <span class="material-icons-round">assignment</span>
+            <p>Your list is empty. Add a task to get started!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
